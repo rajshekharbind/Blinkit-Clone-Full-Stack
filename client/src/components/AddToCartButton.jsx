@@ -76,9 +76,9 @@ const AddToCartButton = ({ data }) => {
         }else{
             const response = await updateCartItem(cartItemDetails?._id,qty-1)
 
-            if(response.success){
-                toast.success("Item remove")
-            }
+            // if(response.success){
+            //     toast.success("Item remove")
+            // }
         }
     }
     return (
