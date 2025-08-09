@@ -76,9 +76,9 @@ const AddToCartButton = ({ data }) => {
         }else{
             const response = await updateCartItem(cartItemDetails?._id,qty-1)
 
-            // if(response.success){
-            //     toast.success("Item remove")
-            // }
+            if(response.success){
+                toast.success("Item remove")
+            }
         }
     }
     return (
@@ -93,9 +93,9 @@ const AddToCartButton = ({ data }) => {
                         <button onClick={increaseQty} className='bg-green-600 hover:bg-green-700 text-white flex-1 w-full p-1 rounded flex items-center justify-center'><FaPlus /></button>
                     </div>
                 ) : (
-                    <button onClick={handleADDTocart} className='bg-green-600 hover:bg-green-700 text-white px-2 lg:px-4 py-1 rounded'>
-                        {loading ? <Loading /> : "Add"}
-                    </button>
+                    // <button onClick={handleADDTocart} className='bg-green-600 hover:bg-green-700 text-white px-2 lg:px-4 py-1 rounded'>
+                    //     {loading ? <Loading /> : "Add"}
+                    // </button>
                 )
             }
 
