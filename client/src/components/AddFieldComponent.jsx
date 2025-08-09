@@ -11,16 +11,17 @@ const AddFieldComponent = ({close,value,onChange,submit}) => {
                     <IoClose size={25}/>
                 </button>
             </div>
-            {/* <input
+            <input
                  className='bg-blue-50 my-3 p-2 border outline-none focus-within:border-primary-100 rounded w-full '
                  placeholder='Enter field name'
                  value={value}
-                 onChange={onChange} client/src/components/AddFieldComponent.jsx
-            /> */}
-            <button
+                 onChange={onChange}
+            />
+            
+            {/* <button
                 onClick={submit}
                 className='bg-yellow-400 hover:bg-yellow-200 px-4 py-2 rounded mx-auto w-fit block'
-            >Add Field</button>
+            >Add Field</button> */}
         </div>
    </section>
   )
